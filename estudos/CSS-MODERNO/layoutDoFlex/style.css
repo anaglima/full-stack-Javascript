@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.container {
+    background-color: darkgray;
+    min-height: 100vh;
+    display: flex; /* o display é a propriedade como nossos itens são exibidos, o flex permite que os itens sejam dispostos em linha */
+    gap: 0px 15px; /* é o column-gap e o row-gap juntos  */
+    justify-content: center; /* alinha os itens no centro do container */
+    align-items: center; /* alinha os itens no centro do container, mas na vertical (meio da tela) */
+    flex-wrap: wrap; /* por padrão os itens ficam em uma única linha, mas com o wrap eles podem quebrar para a próxima linha se não couberem */
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

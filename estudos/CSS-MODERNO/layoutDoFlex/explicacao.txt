@@ -1,0 +1,4 @@
+    column-gap: 15px;  /* o column-gap define o espaçamento entre as colunas, é para quando estiver em linha */
+    /* flex-direction: column; o flex-direction define a direção dos itens no contêiner, o column dispõe os itens em coluna */
+    /* o row-gap define o espaçamento entre as linhas na coluna  */ 
+     flex-wrap: nowrap; /* por padrão os itens ficam em uma única linha, mas com o nowrap eles não quebram mesmo se a tela diminuir */

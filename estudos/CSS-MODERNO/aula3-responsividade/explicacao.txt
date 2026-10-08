@@ -1,0 +1,24 @@
+/*@media (max-width: 795px){  aqui definimos as regras para telas menores que 795px 
+    .img-content {
+        width: 500px;  aqui diminuímos a largura da imagem para telas menores 
+    }
+    .text-content {
+        font-size: 16px; aqui diminuímos o tamanho da fonte para telas menores 
+    }
+}
+
+@media (max-width: 510px){ aqui definimos as regras para telas menores que 510px 
+    .img-content{
+        width: 100%;  aqui definimos a largura da imagem para 100% da tela em telas menores 
+        height: auto;  aqui definimos a altura da imagem para automática 
+    }
+}
+
+@media (max-width: 410px){
+    .text-content {
+        text-align: center;  aqui centralizamos o texto para telas menores que 410px 
+    }
+}
+
+font-alguma coisa é o tamanho da fonte e
+text-alguma coisa é o alinhamento do texto */

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.container {
+  background-color: darkgray;
+  min-height: 100vh;
+  display: grid; /*quando o grid é definido de primeiro momento ele preenche toda a tela */
+  grid-template-columns: 1fr 2fr 1fr 1fr; /*o grid-template-columns que faz criar as colunas */
+  gap: 10px 15px; /*ele da uma espaçamento entre as linhas e colunas seria o row-gap e column-gap em um só o GAP ; */
+  grid-auto-rows: minmax(310px, auto);
+}
+
+.item {
+    border: 2px solid black;
+    background-color: white;
+    font-size: 23px;
+    padding: 10px; /*para o texto nao ficar colado nas colunas/margem da tela*/
+}
+
+/* Explicação
+ grid-template-rows: repeat(3, 1fr) que faz cria containers/templates em linha
+
+ grid-auto-rows: é mais facil de trabalhar
+  grid-auto-rows: minmax(210px, 100%) o minimo de linha é 210px e o máximo é 100% 
+  pq se não tivesse o minmax fosse só 210px, as linhas de texto começariam a sair do template/coluna
+*/

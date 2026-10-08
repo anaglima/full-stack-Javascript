@@ -1,0 +1,173 @@
+*{
+    margin: 0; /* Remove todas as margens padrão de TODOS os elementos */
+    padding: 0; /* Remove todos os espaçamentos internos padrão */
+    box-sizing: border-box; /* Faz com que padding e border não aumentem o tamanho total do elemento */
+}
+
+.container{
+
+  display: flex; /* Ativa o Flexbox para organizar os elementos filhos */
+ flex-direction: column; /* Organiza os itens em coluna (de cima para baixo) */
+ min-width: 100vh; /* Define largura mínima baseada na altura da tela (OBS: geralmente seria min-height) */
+ background-color: darkgrey; /* Define a cor de fundo como cinza escuro */
+}
+
+.header {
+    flex-basis: 100%; /* Faz o header ocupar 100% da largura disponível */
+    background-color: #ffff ; /* Cor de fundo branca */
+    border: 2px solid black; /* Borda preta de 2px */
+    display: flex; /* Ativa Flexbox dentro do header */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 10px; /* Espaçamento interno de 10px */
+    
+}
+
+.paragraph{
+    font-size: 30px; /* Define o tamanho da fonte como 30px */
+}
+
+.mainContent{
+    display: flex; /* Ativa Flexbox */
+    flex-wrap: wrap; /* Permite quebrar linha quando não cabe mais itens */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 10px; /* Espaçamento interno */
+    gap: 10px; /* Espaço entre os itens */
+    flex: 1 0 auto; /* Faz esse elemento crescer para ocupar espaço disponível */
+}
+
+.item{
+    flex-basis: 350px; /* Define largura base de cada item */
+    height: 230px; /* Altura fixa */
+    border: 2px solid black; /* Borda preta */
+    background-color: white; /* Fundo branco */
+    display: flex; /* Ativa Flexbox dentro do item */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    
+}
+
+.footer{
+    flex-basis: 100%; /* Ocupa toda a largura */
+    border: 2px solid black; /* Borda preta */
+    background-color: #ffff; /* Fundo branco */
+    display: flex;  /* Ativa Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Explicação FLEXBOX:
+
+Quando você coloca:
+
+display: flex;
+
+Você está dizendo:
+
+👉 “Ei CSS, organiza os elementos aqui dentro de forma inteligente”
+*/
+
+
+/* Por padrão, os itens ficam em linha:
+
+flex-direction: row;
+
+👉 Ficam assim:
+
+[ item ][ item ][ item ]
+
+Se você mudar pra coluna:
+
+flex-direction: column;
+
+👉 Fica assim:
+
+[ item ]
+[ item ]
+[ item ]
+ */
+
+ /* 👉 justify-content (horizontal)
+
+Controla como os itens ficam no eixo principal:
+
+justify-content: center;
+
+Exemplo:
+
+      [ item ][ item ]
+
+Outros valores:
+
+space-between → espaço entre eles
+space-around → espaço ao redor
+flex-start → grudado no começo
+flex-end → grudado no final */
+
+/* 👉 align-items (vertical)
+
+Controla o alinhamento no outro eixo:
+
+align-items: center;
+
+Exemplo:
+
+   [ item ]
+   [ item ]
+   (centralizados verticalmente) */
+
+/* 
+   🔄 Quebra de linha
+flex-wrap: wrap;
+
+👉 Se não couber na linha, ele joga pra baixo automaticamente
+
+Sem isso:
+
+[ item item item item espremido ]
+
+Com isso:
+
+[ item item ]
+[ item item ] */
+
+/* 📏 Tamanho dos itens
+
+Você pode controlar como os itens crescem:
+
+flex: 1;
+
+👉 Faz o item crescer e ocupar espaço disponível
+
+flex-basis: 200px;
+
+👉 Define o tamanho inicial */
+
+/* 🧩 Resumão (bem direto)
+
+Flexbox serve pra:
+
+✔ alinhar elementos facilmente
+✔ centralizar sem sofrimento 😅
+✔ criar layouts responsivos
+✔ evitar gambiarra com position e float
+
+💡 Uma analogia rápida
+
+Imagina uma mesa:
+
+O container = a mesa
+Os itens = pratos
+O flexbox = você organizando os pratos
+
+Você decide:
+
+ficam em linha ou coluna
+ficam no centro ou nas pontas
+quebram linha ou não */
+
+
+
+
+ 

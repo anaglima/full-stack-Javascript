@@ -1,0 +1,41 @@
+.img-content {
+    width: 765px; /* aqui diminuímos a largura da imagem*/
+    height: 400px; /* aqui diminuímos a altura da imagem*/
+}
+
+.text-content {
+    font-size: 22px; /* aqui aumentamos o tamanho da fonte*/
+    font-family: Arial, Arial, Helvetica, sans-serif; /* aqui mudamos a fonte */
+}
+
+@media (max-width: 2560px) and (min-width: 1440px){ /* telas 4k */
+}
+
+@media (max-width: 790px){   /*telas tablet */
+    .img-content {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 320px){  /*telas mobile */
+    .img-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .title-content {
+        text-align: center;
+    }
+
+    .text-content{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px){
+    .text-content {
+        font-size: 14px;
+    }
+}
