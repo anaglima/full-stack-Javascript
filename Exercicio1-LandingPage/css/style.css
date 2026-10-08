@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.imgLogo {
+  width: 180px;
+}
+
+body {
+  background: url("../images/backgroundLp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  color: white;
+}
+
+.container1 {
+  width: 450px;
+  height: auto;
+  background-color: rgba(19, 18, 18, 0.9450980392);
+}
+
+.paragraph {
+  margin: 6px 0px;
+}
+
+.btn1 {
+  color: #ff0043;
+  border: 2px solid #ff0043;
+}
+.btn1:hover {
+  background-color: #ff0043;
+  color: white;
+}
+
+.footer {
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+
+/*# sourceMappingURL=style.css.map */

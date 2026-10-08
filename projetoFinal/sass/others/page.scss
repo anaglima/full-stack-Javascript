@@ -1,0 +1,115 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+// HEADER
+.navbar{
+background-color: transparent;
+position: absolute;
+color: white;
+left: 8%;
+font-size: 12px;
+}
+
+// BODY
+body{
+background-color: black;
+color: white;
+
+}
+
+//IMAGENS BACKGROUND
+.img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 30px;
+}
+
+
+// TEXTOS DOS BACKGROUNDS
+.img2{
+ position: relative;
+} .img3{
+ position: relative;
+}.img4{
+    position: relative;
+}.text{
+    position: absolute;
+    top: 40%;
+    left: 10%;  
+}.img10{
+    background-color: black;
+    min-height: 100vh;
+}
+
+
+.text-banner{
+    position: absolute;
+    top: 60%;
+    left: 35%;  
+ .h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+} .pFalcon {
+    font-size: 20px;
+    font-weight: bold;
+}
+}
+
+.banner{
+    background-color: black;
+
+    .numberReleases{
+      
+        font-weight: bold;
+
+        
+    }.numberP{
+    font-size: 15px;
+    }
+}
+
+
+
+
+//FONT DO H2
+.h2{
+    font-size: 40px;
+}
+
+//BOTÃO SAIBA MAIS
+.btn{
+    border: 2px solid;
+    width: 150px;
+    height: 55px;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+
+// FOOTER
+.footer{
+    padding: 20px;
+}
+
+.textFooter{
+    color: white;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.textCopy{
+    color: white;
+      font-size: 13px;
+}
+
+.textFooter:hover{
+    color: #d9d9d9;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Lib Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Css - Sass -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Projeto Final Bootstrap</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="container-fluid p-0 ">
+        <header class="header">
+            <nav class="navbar mt-3">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logoOBC.png" width="250px">
+                    </a>
+                    <div class="falcon ms-4">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">FALCON 9</a>
+                    </div>
+                    <div class="human ms-3">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">HUMAN SPACE FLIGHT</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- BODY -->
+        <div class="img1">
+            <div class="text" data-aos="fade-right">
+                <p class="h5">LANÇAMENTO A CAMINHO</p>
+                <h2 class="h2">MISSÃO EQUIPE-3</h2>
+                <button type="button" class="btn btn-outline-light mt-5">SAIBA MAIS</button>
+            </div>
+            <img src="./images/naveNasa-img1.jpg" class="img img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="img2">
+            <div class="text" data-aos="fade-right" data-aos-duration="1000">
+                <p class="h5">MISSÃO CONCLUÍDA</p>
+                <h2 class="h2">MISSÃO EQUIPE-2</h2>
+                <h2 class="h2">RETORNOU PARA A TERRA</h2>
+                <button type="button" class="btn btn-outline-light mt-5">SAIBA MAIS</button>
+            </div>
+            <img src="./images/img2.jpg" class="img img-fluid" alt="Responsive image">
+        </div>
+
+
+        <div class="img3">
+            <div class="text" data-aos="fade-down" data-aos-duration="2000">
+                <p class="h5">MISSÃO CONCLUÍDA</p>
+                <h2 class="h2">DRAGON RETORNOU PARA A<br>TERRA</h2>
+                <button type="button" class="btn btn-outline-light mt-5">SAIBA MAIS</button>
+            </div>
+            <img src="./images/gifAstronautas-img3.gif" class="img img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="img4">
+            <div class="text" data-aos="fade-down-right" data-aos-duration="2000">
+                <h2 class="h2">STARSHIP POUSA ASTRONAUTAS<br>DA NASA NA LUA</h2>
+                <button type="button" class="btn btn-outline-light mt-5">SAIBA MAIS</button>
+            </div>
+            <img src="./images/starship-img4.jpg" class="img img-fluid" alt="Responsive image">
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <ul class="nav justify-content-center align-items-center">
+                <li class="nav-item">
+                    <span class="text-muted nav-link textCopy">AnaGabriela &copy; 2026</span>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link  textFooter">Instagram</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link textFooter ">Facebook</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link textFooter">Twitter</a>
+                </li>
+            </ul>
+        </footer>
+
+    </div>
+
+
+    <!-- Script Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Script bootstrap (o script sempre tem que ficar no final da pag antes do fechamento do body)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

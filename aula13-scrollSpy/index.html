@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS in page -->
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .scrollSpy {
+            height: 380px;
+            overflow: auto;
+            position: relative;
+            font-size: 25px;
+        }
+    </style>
+
+    <title>Scroll Spy</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-3">
+                <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#item-1">Item 1</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                        </nav>
+                        <a class="nav-link" href="#item-2">Item 2</a>
+                        <a class="nav-link" href="#item-3">Item 3</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                        </nav>
+                    </nav>
+                </nav>
+
+            </div>
+
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0"
+                class="col scrollSpy">
+                <h4 id="item-1">Item 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi voluptas
+                    soluta
+                    aspernatur laudantium in similique ad a optio, voluptatibus, cum vitae maiores, omnis animi
+                    praesentium.
+                    Repudiandae nihil facilis neque!</p>
+                <h5 id="item-1-1">Item 1-1</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente esse accusantium reiciendis!
+                    Delectus.</p>
+                <h5 id="item-1-2">Item 1-2</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, blanditiis rem! Fuga molestias
+                    porro, placeat blanditiis veritatis id amet minus quod</p>
+                <h4 id="item-2">Item 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus veniam libero nam,
+                    dolorem quod porro earum corrupti deserunt dolore labore totam officiis mollitia, voluptas
+                    eveniet facilis dolor! Inventore, provident perferendis!</h4>
+                <h4 id="item-3">Item 3</h4>
+                inventore perferendis modi aliquid magni, veritatis assumenda ipsum quis obcaecati nulla fugiat
+                dignissimos natus delectus, blanditiis iste ducimus.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi magnam dolor illum error sint
+                    totam nesciunt ill.</p>
+                <h5 id="item-3-1">Item 3-1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem assumenda nemo ad quibusdam
+                    blanditiis reiciendis cupiditate laborum </p>
+                <h5 id="item-3-2">Item 3-2</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                    Ipsa, quos? Voluptate, quibusdam!</h5>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Script bootstrap (o script sempre tem que ficar no final da pag antes do fechamento do body)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Script Scroll Spy -->
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar-example'
+        })
+    </script>
+</body>
+
+</html>
